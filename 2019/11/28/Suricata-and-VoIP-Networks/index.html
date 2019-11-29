@@ -6,18 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="This year I gave a talk at SuriCon - the annual Suricata users’ conference - about how Suricata can protect VoIP networks.More precisely, the talk was centered on the SIP parser I wrote in Rust and ha">
+    <meta name="description" content="This year I gave a speech at SuriCon - the annual Suricata users’ conference - about how Suricata can protect VoIP networks.More precisely, the speech was centered on the SIP parser I wrote in Rust an">
 <meta name="keywords" content="suricata,rust,voip,sip,suricon">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Suricata and VoIP Networks">
 <meta property="og:url" content="http://www.glongo.it/2019/11/28/Suricata-and-VoIP-Networks/index.html">
 <meta property="og:site_name" content="&#x2F;home&#x2F;glongo">
-<meta property="og:description" content="This year I gave a talk at SuriCon - the annual Suricata users’ conference - about how Suricata can protect VoIP networks.More precisely, the talk was centered on the SIP parser I wrote in Rust and ha">
+<meta property="og:description" content="This year I gave a speech at SuriCon - the annual Suricata users’ conference - about how Suricata can protect VoIP networks.More precisely, the speech was centered on the SIP parser I wrote in Rust an">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-11-29T08:37:17.610Z">
+<meta property="og:updated_time" content="2019-11-29T13:54:56.204Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Suricata and VoIP Networks">
-<meta name="twitter:description" content="This year I gave a talk at SuriCon - the annual Suricata users’ conference - about how Suricata can protect VoIP networks.More precisely, the talk was centered on the SIP parser I wrote in Rust and ha">
+<meta name="twitter:description" content="This year I gave a speech at SuriCon - the annual Suricata users’ conference - about how Suricata can protect VoIP networks.More precisely, the speech was centered on the SIP parser I wrote in Rust an">
     
     
         
@@ -143,7 +143,7 @@
   
 
   <div class="content" itemprop="articleBody">
-    <p>This year I gave a talk at <a href="https://www.suricon.net/" target="_blank" rel="noopener">SuriCon</a> - the annual Suricata users’ conference - about how Suricata can protect VoIP networks.<br>More precisely, the talk was centered on the SIP parser I wrote in <a href="https://www.rust-lang.org/" target="_blank" rel="noopener">Rust</a> and has been introduced in Suricata 5.0<br>Let’s start from the basic and discover what we can do.</p>
+    <p>This year I gave a speech at <a href="https://www.suricon.net/" target="_blank" rel="noopener">SuriCon</a> - the annual Suricata users’ conference - about how Suricata can protect VoIP networks.<br>More precisely, the speech was centered on the SIP parser I wrote in <a href="https://www.rust-lang.org/" target="_blank" rel="noopener">Rust</a> and has been introduced in Suricata 5.0<br>Let’s start from the basic and discover what we can do.</p>
 <h2 id="SIP-Protocol"><a href="#SIP-Protocol" class="headerlink" title="SIP Protocol"></a>SIP Protocol</h2><p>The SIP (Session Initial Protocol) is a protocol defined by IETF in <a href="https://tools.ietf.org/html/rfc3261" target="_blank" rel="noopener">RFC3261</a> and is the main actor in VoIP networks.<br>Its role is to setup a multimedia session, a call, between two endpoints but then it has no idea of what’s going on over the connection.<br>Since SIP can’t carry on all the job by itself, it works along with other protocols such as:</p>
 <ul>
 <li><p>Real-Time Protocol (RTP): a specialized application layer for transporting audio and video when real-time streaming is needed</p>
